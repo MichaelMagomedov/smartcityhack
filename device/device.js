@@ -1,7 +1,6 @@
 const { ApiPromise, WsProvider } = require('@polkadot/api');
 const ipfsAPI = require('ipfs-api');
 const fs = require('fs');
-const app = express();
 const { Keyring } = require('@polkadot/keyring');
 const ipfs = ipfsAPI('ipfs.infura.io', '5001', {protocol: 'https'})
 
@@ -26,7 +25,7 @@ async function main () {
         if (err) {
             console.log(err);
         }
-        api.tx.robonomics.sendData(toHex(file)).signAndSend(alice);
+        api.tx.robonomics.sendData(toHex(file[0].hash)).signAndSend(alice);
     })
 
 
