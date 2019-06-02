@@ -89,9 +89,52 @@ const getApi = async () => {
   }
 }
 
+const shiftArray = arr => {
+  const [first, ...tail] = arr
+  return [...tail, first]
+}
+
+const regenerteData = () => {
+  const dataFile = fs.readFileSync("data.json")
+  const data = JSON.parse(dataFile)
+  const resultDat = {
+    ...data,
+    districts: [
+      ...data.districts.map(district => {
+        return {
+          ...district,
+          streets: [
+            ...district.streets.map(street => {
+              return {
+                ...street,
+                buildings: [
+                  ...street.buildings.map(building => {
+                    return {
+                      ...building,
+                      apartments: [
+                        ...building.apartments.map(apartment => {
+                          return {
+                            ...apartment,
+                            data: shiftArray(apartment.data)
+                          }
+                        })
+                      ]
+                    }
+                  })
+                ]
+              }
+            })
+          ]
+        }
+      })
+    ]
+  }
+  return JSON.stringify(resultDat)
+}
+
 async function main() {
   const api = await getApi()
-  const data = generateData()
+  const data = regenerteData()
   fs.writeFile("data.json", data, "utf8", function() {
     const dataFile = fs.readFileSync("data.json")
     const dataBuffer = new Buffer(dataFile)
