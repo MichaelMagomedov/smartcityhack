@@ -1,4 +1,8 @@
 {
+    "Sensor": {
+        "fileHash": "Vec<u8>",
+        "sender": "AccountId"
+    },
     "Order": {
         "model": "Vec<u8>",
         "objective": "Vec<u8>",

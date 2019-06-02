@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecb8a7de-fd70-48e9-aca1-1f46eea67c34" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/delete.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/custom_types.json" beforeDir="false" afterPath="$PROJECT_DIR$/res/custom_types.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/src/robonomics.rs" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/src/robonomics.rs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +26,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runtime/src/robonomics.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="227">
+              <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/custom_types.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/delete.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1530">
+              <caret line="102" column="9" selection-start-line="92" selection-start-column="7" selection-end-line="102" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/robonomics_testnet.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -34,11 +63,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>robono</find>
-      <find>{Module, Call, Storage, Event&lt;T&gt;}</find>
-      <find>Robonomics</find>
       <find>BalanceOf</find>
-      <find>Event</find>
       <find>event</find>
       <find>Currency</find>
       <find>string</find>
@@ -51,19 +76,23 @@
       <find>release</find>
       <find>demandOf</find>
       <find>SensorOf</find>
-      <find>LiabilityCount</find>
       <find>Sensor</find>
-      <find>sendData</find>
       <find>liability_count</find>
       <find>sensor_count</find>
       <find>sensor</find>
       <find>sensorIndex</find>
       <find>Trait</find>
       <find>LiabilityIndex</find>
-      <find>create_liability</find>
       <find>offer(</find>
       <find>Lia</find>
       <find>SensorIndex</find>
+      <find>demand</find>
+      <find>sendData</find>
+      <find>create_liability</find>
+      <find>offer</find>
+      <find>LiabilityCount</find>
+      <find>Li</find>
+      <find>Event</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -80,22 +109,14 @@
         <option value="$PROJECT_DIR$/runtime/src/test.rs" />
         <option value="$PROJECT_DIR$/runtime/src/lib.rs" />
         <option value="$PROJECT_DIR$/runtime/wasm/target/.rustc_info.json" />
+        <option value="$PROJECT_DIR$/delete.txt" />
+        <option value="$PROJECT_DIR$/res/custom_types.json" />
         <option value="$PROJECT_DIR$/runtime/src/robonomics.rs" />
       </list>
     </option>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="NPqtfMiq" />
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/substrate-node-robonomics.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="232" />
@@ -119,13 +140,7 @@
             <path>
               <item name="substrate-node-robonomics" type="b2602c69:ProjectViewProjectNode" />
               <item name="substrate-node-robonomics" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="substrate-node-robonomics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="substrate-node-robonomics" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="wasm" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -178,17 +193,19 @@
       <workItem from="1559392224401" duration="11527000" />
       <workItem from="1559405770282" duration="2082000" />
       <workItem from="1559413230683" duration="1854000" />
-      <workItem from="1559423327691" duration="5223000" />
+      <workItem from="1559423327691" duration="8887000" />
+      <workItem from="1559439530297" duration="2586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21152000" />
+    <option name="totallyTimeSpent" value="27402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="25" width="1535" height="875" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26393554" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26796508" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -200,7 +217,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.40482575" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.40482575" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -268,12 +285,6 @@
     <entry file="file://$PROJECT_DIR$/runtime/wasm/build.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/robonomics_testnet.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/custom_types.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Cargo.toml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -302,10 +313,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/delete.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="102" column="9" selection-start-line="92" selection-start-column="7" selection-end-line="102" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/robonomics_testnet.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/custom_types.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/runtime/src/robonomics.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="227">
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
         </state>
       </provider>
     </entry>
