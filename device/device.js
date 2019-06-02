@@ -25,7 +25,10 @@ async function main () {
         if (err) {
             console.log(err);
         }
-        api.tx.robonomics.sendData(toHex(file[0].hash)).signAndSend(alice);
+        api.tx.robonomics.sendData(toHex(file[0].hash)).signAndSend(alice).then(function () {
+            console.log('sended');
+            process.exit(1);
+        });
     })
 
 
