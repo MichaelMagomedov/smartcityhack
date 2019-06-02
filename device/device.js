@@ -1,5 +1,9 @@
 const { ApiPromise, WsProvider } = require('@polkadot/api');
+const ipfsAPI = require('ipfs-api');
+const fs = require('fs');
+const app = express();
 const { Keyring } = require('@polkadot/keyring');
+const ipfs = ipfsAPI('ipfs.infura.io', '5001', {protocol: 'https'})
 
 const toHex = (s) => {
     var s = unescape(encodeURIComponent(s))
@@ -15,7 +19,17 @@ async function main () {
     const api = await ApiPromise.create(provider);
     const keyring = new Keyring({ type: 'sr25519' });
     const alice = keyring.addFromUri('//Alice');
-    api.tx.robonomics.sendData(toHex('Hello world')).signAndSend(alice);
+    const dataFile = fs.readFileSync("data.json");
+    const dataBuffer = new Buffer(dataFile);
+
+    ipfs.files.add(dataBuffer, (err, file) => {
+        if (err) {
+            console.log(err);
+        }
+        api.tx.robonomics.sendData(toHex(file)).signAndSend(alice);
+    })
+
+
 }
 
-console.log(main());
+main();
