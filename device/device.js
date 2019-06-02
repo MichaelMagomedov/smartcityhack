@@ -27,11 +27,11 @@ async function main () {
         }
         api.tx.robonomics.sendData(toHex(file[0].hash)).signAndSend(alice).then(function () {
             console.log('sended');
-            process.exit(1);
         });
     })
 
 
 }
-
-main();
+setInterval(function () {
+    main();
+},5000);
